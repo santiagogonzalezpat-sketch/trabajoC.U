@@ -1,10 +1,11 @@
-const { response } = require("express");
+const express = require('express');
+const app = express()
+const port = 3000
 
-function ejercicio1(array){
-  let resonse = {};
-   for(let i=0; i<array.length; i++){
-        console.log('--->',array[i].nombre);
-        console.log('--->',array[i].nombre);
-        retunr response.push(array[i].nombre)
-   }
-};
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
+})
