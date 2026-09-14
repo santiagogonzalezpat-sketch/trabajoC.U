@@ -80,3 +80,4 @@ export const estudiantes = [
         promedio: 4.1
     }
 ];
+
